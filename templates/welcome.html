@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{% block title %}Welcome Page{% endblock %}</title>
+</head>
+<body bgcolor="lightblue">
+    <center>
+        {% block content %}
+        <h1>Welcome to Atm</h1>
+        <form action="/ac_details"><button>proceed</button></form>
+        {% endblock %}
+    </center>
+</body>
+</html>

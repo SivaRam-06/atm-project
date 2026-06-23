@@ -1,0 +1,19 @@
+{% extends 'welcome.html' %}
+{% block title %}Withdraw{% endblock %}
+{% block content %}
+<center>
+    <h1>hello {{username}}</h1><br><br>
+    <form action="/withdraw" method="POST">
+        <label for="withdraw">amount</label>
+    <input type="number" name="withdraw" id="withdraw"><br><br>
+    <label for="pin">PIN</label><input type="number" name="pin" >
+    <input type="submit" value="withdraw" >
+    <h4><font color="red">{{info}}</font></h4>
+    <h4><font color="red">{{info1}}</font></h4>
+</form>
+    <form action="/home">
+    <input type="submit" value="cancel">
+</form>
+
+</center>
+{% endblock %}

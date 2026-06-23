@@ -1,0 +1,11 @@
+{% extends 'change_pin.html' %}
+{% block title %}notification on changed{% endblock%}
+{% block content %}
+<center>
+    <h1>hello {{username}}</h1><br>
+    <h1>PIN changed successfully</h1><br>
+    <form action="/home">
+        <input type="submit" value="end">
+    </form>
+</center>
+{% endblock %}

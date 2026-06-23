@@ -1,0 +1,24 @@
+{% extends 'welcome.html' %}
+{% block title %}Change PIN{% endblock %}
+{% block content %}
+<center>
+    <h1>hello {{username}}</h1><br><br>
+    <form action="/change_pin" method="POST">
+        <label for="name">username</label>
+    <input type="text" name="name" id="name"><br><br>
+    <label for="ac_no">Account Number</label>
+    <input type="text" name="ac_no" id="ac_no"><br><br>
+    <label for="old">Old Pin</label>
+        <input type="password" name="old" id="old" minlength="4" maxlength="4"><br><br>
+        <label for="new">New Pin</label>
+        <input type="password" name="new" id="new" minlength="4" maxlength="4"><br><br>
+    <input type="submit" value="change">
+    <h4><font color="red">{{error_message}}</font></h4>
+</form>
+<form action="/home">
+    <input type="submit" value="cancel">
+</form>
+    
+
+</center>
+{% endblock %}

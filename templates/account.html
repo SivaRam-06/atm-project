@@ -1,0 +1,16 @@
+{% extends 'welcome.html' %}
+{% block title%}Account Number{% endblock %}
+{% block content%}
+<body bgcolor="lightpink">
+<center>
+<h2>Please enter your account number </h2>
+<form action="/ac_details" method="POST">
+    <h2 color="red">{{info}}</h2>
+    <input type="hidden" name="asd">
+<label for="acc">Account No:<input type="name" name="acc" required maxlength="14" minlength="14"></label><br>
+<button>Submit</button>
+</form>
+
+</center>
+</body>
+{% endblock %}

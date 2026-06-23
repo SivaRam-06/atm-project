@@ -1,0 +1,16 @@
+{% extends 'welcome.html' %}
+{% block title %} home {% endblock %}
+{% block content %}
+<form action="/logout" >
+    <input type="submit" value="Logout"></form>
+<center>
+    <h1><font>hello {{username}}</font></h1> <br><br>
+    <form action="/check_balance"><input type="submit" value="check balance"></form><br>
+    <form action="/deposit"><input type="submit" value="deposit"></form><br>
+    <form action="/withdraw"><input type="submit" value="withdraw"></form><br>
+    <form action="/change_pin"><input type="submit" value="change pin"></form><br>
+    <form action="/bank_statement"><input type="submit" value="bank statement"></form>
+
+</center>
+
+{% endblock %}

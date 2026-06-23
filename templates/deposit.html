@@ -1,0 +1,16 @@
+{% extends 'welcome.html' %}
+{% block title %}Deposit{% endblock %}
+{% block content %}
+<center>
+    <h1>hello {{username}}</h1><br><br>
+    <form action="/deposit" method="POST">
+        <label for="deposit">amount</label>
+    <input type="number" name="deposit" id="deposit">
+    <input type="submit" value="Deposit" onclick="this.disabled=true; this.form.submit();">
+</form>
+    <form action="/home">
+    <input type="submit" value="cancel">
+</form>
+
+</center>
+{% endblock %}

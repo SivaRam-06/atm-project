@@ -1,0 +1,14 @@
+{% extends 'change_pin.html' %}
+{% block title %}notification on new_pin{% endblock%}
+{% block content %}
+<center>
+    <h1>hello {{username}}</h1><br>
+    <form action="/c_success" method='POST'>
+        <label for="old">Old Pin</label>
+        <input type="number" name="old" id="old"><br><br>
+        <label for="new">New Pin</label>
+        <input type="number" name="new" id="new"><br><br>
+        <input type="submit" value="change">
+    </form>
+</center>
+{% endblock %}

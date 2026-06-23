@@ -1,0 +1,16 @@
+{% extends 'welcome.html' %}
+{% block title %}Account Number{% endblock %}
+{% block content %}
+<body bgcolor="lightpink">
+<center>
+<h2>Please enter your pin </h2>
+<form action="/pin" method="POST">
+    
+    <input type="hidden" name="password" value="password">
+<label for="acc">PIN: <input type="password" name="pin" required maxlength="4" minlength="4"></label><br>
+<button>Submit</button>
+</form>
+<font color:navy-blue>{{info}}</font>
+</center>
+</body>
+{% endblock %}
